@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 const Calc = () => {
     const[calc,setCalc]=useState("")
-    const operation=(e)=>{
+    const operation=(e:any)=>{
 setCalc(calc.concat(e.target.value))
     }
     const clear=()=>{
