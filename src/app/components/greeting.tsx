@@ -4,7 +4,7 @@ const Greeting = () => {
     const curDate=new Date()
     const hours=curDate.getHours()
     let greetings="";
-    const cssStyle={};
+    const cssStyle:React.CSSProperties={};
     if(hours>=1 && hours<12){
         greetings="Good Morning"
         cssStyle.color="green"
