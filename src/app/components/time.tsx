@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 const Time = () => {
     let time=new Date ().toLocaleString()
+  
     const[ctime,setCtime]=useState(time)
     function updateTime(){
         time=new Date ().toLocaleString()
