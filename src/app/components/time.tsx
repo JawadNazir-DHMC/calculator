@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 
 const Time = () => {
-    let time=new Date ().toLocaleString()
+    let time=new Date ().toLocaleTimeString()
   
     const[ctime,setCtime]=useState(time)
     function updateTime(){
-        time=new Date ().toLocaleString()
+        time=new Date ().toLocaleTimeString()
 setCtime(time)
     }
     setInterval(updateTime,1000)
